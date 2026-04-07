@@ -7,4 +7,6 @@ def home():
     return "Zawa 2.0 está viva 🧠"
 
 if __name__ == "__main__":
-    app.run()
+    import os
+
+app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
